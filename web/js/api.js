@@ -1,6 +1,6 @@
 const API = (() => {
   function getBaseUrl() {
-    return (APP_CONFIG.API_BASE_URL || 'http://localhost:8080').replace(/\/$/, '');
+    return (APP_CONFIG.API_BASE_URL || 'https://chat-bot-vendas-bnoi.onrender.com').replace(/\/$/, '');
   }
 
   function parseProblemDetails(text, status) {

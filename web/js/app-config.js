@@ -5,5 +5,5 @@
  * Em GitHub Pages, use a URL publica HTTPS da API e configure CORS no backend.
  */
 const APP_CONFIG = {
-  API_BASE_URL: 'http://localhost:8080',
+  API_BASE_URL: 'https://chat-bot-vendas-bnoi.onrender.com',
 };
