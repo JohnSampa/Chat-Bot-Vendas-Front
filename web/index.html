@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat Bot — Vendas</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <button type="button" class="btn btn-primary" id="btn-new-chat">+ Nova conversa</button>
+      </div>
+      <nav class="sidebar-nav">
+        <span class="nav-link">Assistente de vendas</span>
+      </nav>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <span class="chat-title">Chat Bot Vendas</span>
+      </header>
+
+      <div class="messages" id="messages">
+        <div class="messages-inner" id="messages-inner"></div>
+      </div>
+
+      <div class="composer-wrap">
+        <form class="composer" id="composer-form">
+          <textarea
+            id="message-input"
+            rows="1"
+            placeholder="Envie uma mensagem..."
+            autocomplete="off"
+          ></textarea>
+          <button type="submit" class="send-btn" id="send-btn" aria-label="Enviar" disabled>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" transform="rotate(-90 12 12)"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app-config.js"></script>
+  <script src="js/chatbot-response.js"></script>
+  <script src="js/api.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
